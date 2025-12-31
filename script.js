@@ -4,10 +4,10 @@ $(document).ready(function() {
   });
   $("#close-menu").click(function() {
     $("#menu").removeClass("visible");
-    $.ajax({
-      url: "/test.md"
-    }).done(function(data) {
-      $("#content").text(data);
-    })
+    // $.ajax({
+    //   url: "/test.md"
+    // }).done(function(data) {
+    //   $("#content").text(data);
+    // })
   });
 });
