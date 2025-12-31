@@ -15757,9 +15757,12 @@ Zyra
 Zyriah
 `.trim().split("\n").map(x => x.trim());
 
+function setName() {
+  const name = names[Math.floor(Math.random() * names.length)];
+  $("#for-love").text(name);
+}
+
 $(document).ready(function() {
-  setInterval(function() {
-    const name = names[Math.floor(Math.random() * names.length)];
-    $("#for-love").text(name);
-  }, 5000);
+  setName();
+  setInterval(setName, 5000);
 });
