@@ -83,6 +83,20 @@ body {
   text-shadow: 1px 1px 8px rgb(160, 160, 70, 30%);
 }
 
+#for-love {
+  width: 100%;
+  margin-bottom: 30px;
+  text-align: center;
+  color: white
+}
+#for-love::before {
+  content: "For ";
+}
+#for-love::after {
+  content: " ❤︎";
+  color: #dc3545;
+}
+
 h1 {
   margin-bottom: 20px;
 }
