@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(() => {
   $("#open-menu").click(function() {
     $("#menu").addClass("visible");
   });
