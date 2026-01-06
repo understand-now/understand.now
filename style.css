@@ -15,8 +15,13 @@
   box-sizing: border-box;
 }
 
-a {
+a, a:link, a:visited, a:active {
+  color: inherit !important;
   text-decoration: underline wavy;
+}
+a:hover {
+  color: inherit !important;
+  text-decoration: underline wavy 2px;
 }
 
 html {
@@ -74,7 +79,6 @@ body {
   color: var(--color-bg);
 }
 #menu a {
-  color: var(--color-bg);
   text-decoration: none;
 }
 #menu.visible {
