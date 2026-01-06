@@ -1,6 +1,8 @@
 :root {
-  --color-fg: rgb(180, 180, 85);
-  --color-fg2: rgb(160, 160, 70);
+  --color-fg: rgb(215, 200, 25);
+  --color-fg2: rgb(185, 170, 50);
+  --color-fg-glow: rgb(185, 170, 50, 20%);
+  --color-bg-glow: rgb(185, 170, 50, 6%);
   --color-bg: #222;
   --color-bg2: #111;
 }
@@ -30,7 +32,7 @@ html {
 
 body {
   position: absolute;
-  background-image: radial-gradient(transparent 60%, rgb(180, 180, 85, 8%));
+  background-image: radial-gradient(transparent 60%, var(--color-bg-glow));
   color: var(--color-fg);
   font-family: Georgia, Verdana;
   border-left: 3px solid var(--color-fg);
@@ -64,6 +66,9 @@ body {
   max-width: 250px;
   min-height: 100%;
   background-color: var(--color-fg2);
+  background-image:
+    repeating-linear-gradient(-45deg, var(--color-fg), transparent, var(--color-fg) 3px),
+    repeating-linear-gradient(45deg, var(--color-fg), var(--color-fg2), var(--color-fg) 3px);
   border: 3px solid var(--color-fg);
   border-left: none;
   box-shadow: 6px 0px 5px var(--color-bg2);
@@ -80,7 +85,7 @@ body {
 
 #content {
   padding: 100px 20px;
-  text-shadow: 1px 1px 8px rgb(160, 160, 70, 30%);
+  text-shadow: 1px 1px 8px var(--color-fg-glow);
 }
 
 #for-love {
@@ -94,7 +99,7 @@ body {
 }
 #for-love::after {
   content: " ❤︎";
-  color: #dc3545;
+  color: #DD3545;
 }
 
 h1 {
