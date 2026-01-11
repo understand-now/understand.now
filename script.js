@@ -1,5 +1,7 @@
 mdToHtml = (md) => {
-  return md.replaceAll("\n\n", "<br/><br/>")
+  return md
+    .replaceAll("\n\n", "<br/><br/>")
+    .replaceAll(" -- ", " — ")
 };
 
 $(document).ready(() => {
