@@ -117,6 +117,13 @@ h1 {
 p {
   margin-bottom: 20px;
 }
+p.first::first-letter {
+  font-size: 150%;
+}
+p > span:first-child {
+  font-size: 150%;
+  font-weight: bold;
+}
 p.quote {
   padding: 10px 15px;
   border-left: 4px solid var(--color-fg);
