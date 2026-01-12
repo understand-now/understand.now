@@ -41,6 +41,11 @@ body {
   font-family: Georgia, Verdana;
   border-left: 3px solid var(--color-fg);
   min-height: 100%;
+  min-width: 100%;
+}
+
+.hidden {
+  visibility: hidden;
 }
 
 .toggle-menu {
@@ -93,7 +98,25 @@ body {
 
 #content {
   padding: 100px 20px;
+  min-height: 90vh;
   text-shadow: 1px 1px 8px var(--color-fg-glow);
+  text-align: justify;
+}
+#content > #loading {
+  height: 100vh;
+  margin-top: -100px;
+  margin-bottom: -999px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@keyframes blink {
+  0% { opacity: 1; scale: 1; }
+  50% { opacity: 0.3; scale: 0.98; }
+  100% { opacity: 1; scale: 1; }
+}
+.blink {
+  animation: blink 2s linear infinite;
 }
 
 #for-love {

@@ -16,10 +16,13 @@ $(document).ready(() => {
   });
   $("#close-menu").click(function() {
     $("#menu").removeClass("visible");
+  });
+  setTimeout(() => {
     $.ajax({
       url: "/test.md"
     }).done(function(data) {
       $("#content").html(mdToHtml(data));
+      $("#for-love").removeClass("hidden");
     })
-  });
+  }, 1000);
 });

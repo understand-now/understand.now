@@ -15761,5 +15761,5 @@ $(document).ready(() => {
   setInterval(() => {
     const name = names[Math.floor(Math.random() * names.length)];
     $("#for-love").text(name);
-  }, 5000);
+  }, 3000);
 });
