@@ -97,8 +97,9 @@ body {
 }
 
 #content {
-  padding: 100px 20px;
+  padding: 100px 5%;
   min-height: 90vh;
+  line-height: 150%;
   text-shadow: 1px 1px 8px var(--color-fg-glow);
   text-align: justify;
 }
