@@ -1,7 +1,7 @@
 :root {
   --color-fg: rgb(215, 200, 25);
   --color-fg2: rgb(185, 170, 50);
-  --color-fg-glow: rgb(185, 170, 50, 20%);
+  --color-fg-glow: rgb(185, 170, 50, 25%);
   --color-bg-glow: rgb(185, 170, 50, 6%);
   --color-bg: #222;
   --color-bg2: #111;
@@ -110,6 +110,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+#content > #loading > img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
 }
 @keyframes blink {
   0% { opacity: 1; scale: 1; }
