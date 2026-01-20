@@ -15757,9 +15757,9 @@ Zyra
 Zyriah
 `.trim().split("\n").map(x => x.trim());
 
-$(document).ready(() => {
+document.addEventListener('DOMContentLoaded', async () => {
   setInterval(() => {
     const name = names[Math.floor(Math.random() * names.length)];
-    $("#for-love").text(name);
+    document.getElementById("for-love").innerText = name;
   }, 3000);
 });
