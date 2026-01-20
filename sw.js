@@ -21,7 +21,6 @@ loadBooks = async () => {
 const CACHE_NAME = 'site_assets_v1';
 const site = [
   '/',
-  '/404.html',
   '/apple-touch-icon.png',
   '/book.md',
   '/favicon-96x96.png',
